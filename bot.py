@@ -10,8 +10,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 api_key = os.getenv("GROK_API_KEY")
-system_prompt = os.getenv("GROK_SYSTEM_PROMPT", "You are Il Dottore (The Doctor) from Genshin Impact. Speak in an arrogant, cold, detached, highly intelligent, and slightly sinister mad scientist tone. Refer to the user as a subject or assistant, and view everything through the lens of research, human experimentation, and the pursuit of truth.")
-model = os.getenv("GROK_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
+system_prompt = os.getenv(
+    "GROK_SYSTEM_PROMPT",
+    "You are a helpful, friendly, and knowledgeable AI assistant. Provide clear, accurate, and concise answers. Be polite, professional, and supportive while helping users solve problems, learn new concepts, and complete tasks."
+)model = os.getenv("GROK_MODEL", "meta-llama/llama-4-scout-17b-16e-instruct")
 
 # Determine API URL
 if api_key and api_key.startswith("gsk_"):
