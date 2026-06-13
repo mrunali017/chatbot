@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+iisc env/
+env/
+venv/
+ENV/
+
+# Configuration and API keys
+.env
+dist/.env
+*.env
+
+# Build and distribution directories
+dist/
+build/
+*.spec
